@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/baslik"
+        android:fontFamily="@font/telex"
+        android:gravity="center"
+        android:text="TOPLAM TUTAR"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textViewKdvTutari"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textViewToplamTutar"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cerceve"
+        android:fontFamily="@font/telex"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKdvTutari" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/baslik"
+        android:fontFamily="@font/telex"
+        android:gravity="center"
+        android:text="İŞLEM TUTARI"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textViewKdvTutari"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKdvDahilorHaric" />
+
+    <TextView
+        android:id="@+id/textViewIslemTutari"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cerceve"
+        android:fontFamily="@font/telex"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewKdvDahilorHaric" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/baslik"
+        android:fontFamily="@font/telex"
+        android:gravity="center"
+        android:text="TUTAR GİRİN"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/editTutar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBaslik" />
+
+    <EditText
+        android:id="@+id/editKDV"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cerceve"
+        android:ems="10"
+        android:fontFamily="@font/telex"
+        android:hint="KDV Oran Seçiniz."
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/editTutar" />
+
+    <Button
+        android:id="@+id/buttonBaslik"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="576dp"
+        android:background="@drawable/baslik"
+        android:fontFamily="@font/telex"
+        android:text="# KDV HESAPLAMA #"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/baslik"
+        android:fontFamily="@font/telex"
+        android:gravity="center"
+        android:text="KDV GİRİN"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/editTutar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/editTutar"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cerceve"
+        android:ems="10"
+        android:fontFamily="@font/telex"
+        android:hint="Tutar Giriniz."
+        android:inputType="numberDecimal"
+        android:maxLength="13"
+        android:paddingLeft="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBaslik" />
+
+    <Button
+        android:id="@+id/buttonYuzde18"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hesapla_selector"
+        android:fontFamily="@font/telex"
+        android:text="%18"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/buttonYuzde8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonYuzde8"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hesapla_selector"
+        android:fontFamily="@font/telex"
+        android:text="%8"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/buttonYuzde1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonYuzde18"
+        app:layout_constraintTop_toBottomOf="@+id/editKDV" />
+
+    <Button
+        android:id="@+id/buttonYuzde1"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/hesapla_selector"
+        android:fontFamily="@font/telex"
+        android:text="%1"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonYuzde8"
+        app:layout_constraintTop_toBottomOf="@+id/editKDV" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonYuzde18">
+
+        <RadioButton
+            android:id="@+id/radioButtonKdvDahil"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/hesapla_selector"
+            android:buttonTint="@android:color/holo_green_dark"
+            android:fontFamily="@font/telex"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="KDV Dahil"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/radioButtonKdvHaric"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:background="@drawable/hesapla_selector"
+            android:buttonTint="@android:color/holo_red_dark"
+            android:fontFamily="@font/telex"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="KDV Hariç"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonHesapla"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/hesapla_selector"
+        android:fontFamily="@font/telex"
+        android:text="Hesapla"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/textViewKdvDahilorHaric"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cerceve"
+        android:fontFamily="@font/telex"
+        android:gravity="center"
+        android:text="   ******** KDV  **********   "
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonHesapla" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/baslik"
+        android:fontFamily="@font/telex"
+        android:gravity="center"
+        android:text="KDV TUTARI"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/textViewKdvTutari"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textViewKdvTutari"
+        android:layout_width="175dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/cerceve"
+        android:fontFamily="@font/telex"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIslemTutari" />
+</androidx.constraintlayout.widget.ConstraintLayout>
